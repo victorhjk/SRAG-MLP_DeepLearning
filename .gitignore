@@ -1,0 +1,16 @@
+# Dados brutos grandes: o notebook pode baixá-los automaticamente
+dados/
+dados_srag/
+*.parquet
+
+# Python/Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

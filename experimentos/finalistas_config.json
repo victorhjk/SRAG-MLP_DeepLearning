@@ -1,0 +1,52 @@
+{
+  "Regress\u00e3o log\u00edstica": {
+    "n_camadas": 0,
+    "largura": 1,
+    "lr": 0.001,
+    "batch_size": 2048,
+    "weight_decay": 0.0
+  },
+  "MLP base (2\u00d7128)": {
+    "n_camadas": 2,
+    "largura": 128,
+    "lr": 0.001,
+    "batch_size": 1024,
+    "ativacao": "relu"
+  },
+  "MLP-Optuna-Top1 (#26)": {
+    "lr": 0.002183739434679766,
+    "n_camadas": 5,
+    "largura": 512,
+    "formato": "funil",
+    "ativacao": "gelu",
+    "dropout": 0.2622943187314189,
+    "weight_decay": 0.015045471367490487,
+    "batchnorm": false,
+    "batch_size": 512,
+    "balancear": true
+  },
+  "MLP-Compacta (#28)": {
+    "lr": 0.0022008164981400765,
+    "n_camadas": 5,
+    "largura": 256,
+    "formato": "funil",
+    "ativacao": "gelu",
+    "dropout": 0.12147928061862452,
+    "weight_decay": 0.0024973905574217116,
+    "batchnorm": false,
+    "batch_size": 512,
+    "balancear": true
+  },
+  "MLP-Alta capacidade (#20)": {
+    "lr": 0.008117301084858697,
+    "n_camadas": 5,
+    "largura": 512,
+    "formato": "funil",
+    "ativacao": "relu",
+    "dropout": 0.06279558198079391,
+    "weight_decay": 0.0007425218857611988,
+    "batchnorm": false,
+    "batch_size": 512,
+    "balancear": true
+  }
+}

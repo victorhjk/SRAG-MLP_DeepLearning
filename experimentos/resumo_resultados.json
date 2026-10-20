@@ -1,0 +1,87 @@
+{
+  "particoes": {
+    "treino": {
+      "anos": [
+        2020,
+        2021
+      ],
+      "n": 2512120,
+      "taxa_obito": 0.28194194544846585
+    },
+    "validacao": {
+      "anos": [
+        2022
+      ],
+      "n": 470059,
+      "taxa_obito": 0.18218989531101415
+    },
+    "teste": {
+      "anos": [
+        2023
+      ],
+      "n": 241411,
+      "taxa_obito": 0.09511579836875701
+    }
+  },
+  "n_features_entrada": 188,
+  "optuna": {
+    "n_tentativas": 40,
+    "completas": 17,
+    "podadas": 23,
+    "melhor_pr_auc_val": 0.4892834147315473,
+    "melhores_params": {
+      "lr": 0.002183739434679766,
+      "n_camadas": 5,
+      "largura": 512,
+      "formato": "funil",
+      "ativacao": "gelu",
+      "dropout": 0.2622943187314189,
+      "weight_decay": 0.015045471367490487,
+      "batchnorm": false,
+      "batch_size": 512,
+      "balancear": true
+    }
+  },
+  "modelo_escolhido": "MLP-Optuna-Top1 (#26)",
+  "config_escolhida": {
+    "lr": 0.002183739434679766,
+    "n_camadas": 5,
+    "largura": 512,
+    "formato": "funil",
+    "ativacao": "gelu",
+    "dropout": 0.2622943187314189,
+    "weight_decay": 0.015045471367490487,
+    "batchnorm": false,
+    "batch_size": 512,
+    "balancear": true
+  },
+  "limiar": 0.6,
+  "metricas_validacao": {
+    "PR_AUC": 0.5002631666955368,
+    "ROC_AUC": 0.8244546812438021,
+    "F1_macro": 0.6865975209412286,
+    "acuracia": 0.795161883933719,
+    "acuracia_bal": 0.7064916443708881,
+    "precisao_obito": 0.4506031922791388,
+    "recall_obito": 0.5669897244278375,
+    "especificidade": 0.8459935643139387,
+    "brier": 0.15367420229920678,
+    "limiar": 0.6,
+    "prev_real": 0.18218989531101415,
+    "prev_prevista_media": 0.3326350450515747
+  },
+  "metricas_teste": {
+    "PR_AUC": 0.3962562905378612,
+    "ROC_AUC": 0.867951138373878,
+    "F1_macro": 0.6814359189139723,
+    "acuracia": 0.8736221630331675,
+    "acuracia_bal": 0.7106565288060118,
+    "precisao_obito": 0.37804208008790924,
+    "recall_obito": 0.5094068460935458,
+    "especificidade": 0.911906211518478,
+    "brier": 0.10078544699736508,
+    "limiar": 0.6,
+    "prev_real": 0.09511579836875701,
+    "prev_prevista_media": 0.21024376153945923
+  }
+}
